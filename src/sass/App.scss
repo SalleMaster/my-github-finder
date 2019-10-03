@@ -1,0 +1,8 @@
+// All Custom Variable Changes
+$theme-colors: (
+  'primary': #521751,
+  'danger': #b80c03
+);
+
+// Import Bootstrap After The Changes
+@import '../../node_modules/bootstrap/scss/bootstrap';
