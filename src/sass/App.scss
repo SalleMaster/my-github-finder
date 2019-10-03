@@ -6,3 +6,31 @@ $theme-colors: (
 
 // Import Bootstrap After The Changes
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
+/*** HOMEPAGE ***/
+
+// Users Grid
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+// *** MEDIA QUERIES ***//
+@media (max-width: 576px) {
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 577px) {
+  .users-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .users-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
