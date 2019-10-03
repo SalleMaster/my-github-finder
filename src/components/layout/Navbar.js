@@ -1,25 +1,39 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = ({ title, icon }) => {
   return (
     <Fragment>
-      <nav className="navbar navbar-expand-sm navbar-primary bg-light mb-3">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            <i className={icon}></i> {title}
+      <nav
+        id='main-nav'
+        className='navbar navbar-expand-sm navbar-primary bg-light mb-3'
+      >
+        <div className='container'>
+          <Link className='navbar-brand' to='/'>
+            <h3>
+              <i className={icon}></i> {title}
+            </h3>
           </Link>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
+          <ul className='navbar-nav'>
+            <li className='nav-item'>
+              <NavLink
+                className='nav-link'
+                to='/'
+                exact
+                activeClassName='active'
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">
+            <li className='nav-item'>
+              <NavLink
+                className='nav-link'
+                to='/about'
+                classNameActive='active'
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

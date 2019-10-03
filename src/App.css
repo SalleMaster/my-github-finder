@@ -10562,6 +10562,14 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*** HOMEPAGE ***/
+#main-nav .nav-link {
+  font-size: 1.2rem;
+}
+
+#main-nav .nav-link.active {
+  color: black;
+}
+
 .users-grid {
   display: -ms-grid;
   display: grid;
