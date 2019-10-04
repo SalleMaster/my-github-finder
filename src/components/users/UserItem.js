@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import GithubContext from '../../context/github/githubContext';
 
 const UserItem = ({ user: { avatar_url, login } }) => {
+  const githubContext = useContext(GithubContext);
+
+  const { getSingleUser } = githubContext;
+
+  const setUser = () => {
+    getSingleUser(login);
+  };
+
   return (
     <div className="card text-center py-3">
       <div className="card-body">
@@ -16,6 +25,7 @@ const UserItem = ({ user: { avatar_url, login } }) => {
         <Link
           className="btn btn-outline-primary btn-sm px-3 mt-2"
           to={`/user/${login}`}
+          onClick={setUser}
         >
           More
         </Link>
