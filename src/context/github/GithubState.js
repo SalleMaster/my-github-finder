@@ -73,6 +73,18 @@ const GithubState = props => {
     });
   };
 
+  // Get Repos
+  const getRepos = async repos_url => {
+    setLoading();
+
+    const res = await axios.get(repos_url);
+
+    dispatch({
+      type: GET_REPOS,
+      payload: res.data
+    });
+  };
+
   return (
     <GithubContext.Provider
       value={{
@@ -82,7 +94,8 @@ const GithubState = props => {
         loading: state.loading,
         searchUsers,
         clearUsers,
-        getSingleUser
+        getSingleUser,
+        getRepos
       }}
     >
       {props.children}

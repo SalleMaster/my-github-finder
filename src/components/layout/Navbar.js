@@ -6,32 +6,32 @@ const Navbar = ({ title, icon }) => {
   return (
     <Fragment>
       <nav
-        id="main-nav"
-        className="navbar navbar-expand-sm navbar-primary bg-light mb-3"
+        id='main-nav'
+        className='navbar navbar-expand-sm navbar-primary bg-light mb-3'
       >
-        <div className="container">
-          <Link className="navbar-brand" to="/">
+        <div className='container'>
+          <Link className='navbar-brand' to='/'>
             <h3>
               <i className={icon}></i> {title}
             </h3>
           </Link>
-          <ul className="navbar-nav">
-            <li className="nav-item">
+          <ul className='navbar-nav'>
+            <li className='nav-item'>
               <NavLink
-                className="nav-link"
-                to="/"
+                className='nav-link'
+                to='/'
                 exact
-                activeclassname="active"
+                activeclassname='active'
               >
                 Home
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className='nav-item'>
               <NavLink
-                className="nav-link"
-                to="/about"
+                className='nav-link'
+                to='/about'
                 exact
-                classnameactive="active"
+                classnameactive='active'
               >
                 About
               </NavLink>
