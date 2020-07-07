@@ -7,7 +7,7 @@ const Navbar = ({ title, icon }) => {
     <Fragment>
       <nav
         id='main-nav'
-        className='navbar navbar-expand-sm navbar-primary bg-light mb-3'
+        className='navbar navbar-expand-sm navbar-primary  mb-3'
       >
         <div className='container'>
           <Link className='navbar-brand' to='/'>
@@ -45,12 +45,12 @@ const Navbar = ({ title, icon }) => {
 
 Navbar.defaultProps = {
   title: 'Github Finder',
-  icon: 'fab fa-github'
+  icon: 'fab fa-github',
 };
 
 Navbar.propTypes = {
   title: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired
+  icon: PropTypes.string.isRequired,
 };
 
 export default Navbar;

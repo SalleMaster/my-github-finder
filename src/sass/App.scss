@@ -1,7 +1,7 @@
 // All Custom Variable Changes
 $theme-colors: (
-  'primary': purple,
-  'danger': #b80c03
+  'primary': #800080,
+  'danger': #b80c03,
 );
 
 // Import Bootstrap After The Changes
@@ -24,6 +24,42 @@ $theme-colors: (
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+}
+
+// Home Header
+.home-header {
+  margin-top: 5rem;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+// Body
+body {
+  min-height: 100vh;
+  background: url('./img/coding-computer-data-depth-of-field-577585.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.5;
+    z-index: -1;
+  }
+}
+
+.card {
+  background: none;
+  border: none;
 }
 
 // *** MEDIA QUERIES ***//
