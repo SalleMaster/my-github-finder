@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import GithubContext from '../../context/github/githubContext';
-import { GET_REPOS } from '../../context/types';
+// import { GET_REPOS } from '../../context/types';
 
 const UserItem = ({ user: { avatar_url, login, repos_url } }) => {
   const githubContext = useContext(GithubContext);
@@ -37,7 +37,7 @@ const UserItem = ({ user: { avatar_url, login, repos_url } }) => {
 };
 
 UserItem.propTypes = {
-  user: PropTypes.object.isRequired
+  user: PropTypes.object.isRequired,
 };
 
 export default UserItem;

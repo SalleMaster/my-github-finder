@@ -6,11 +6,11 @@ const Search = () => {
   const githubContext = useContext(GithubContext);
   const alertContext = useContext(AlertContext);
 
-  const { setAlert, removeAlert } = alertContext;
+  const { setAlert } = alertContext;
 
   const [text, setText] = useState('');
 
-  const onSubmit = e => {
+  const onSubmit = (e) => {
     e.preventDefault();
     if (text === '') {
       return setAlert();
@@ -20,7 +20,7 @@ const Search = () => {
     }
   };
 
-  const onChange = e => {
+  const onChange = (e) => {
     setText(e.target.value);
   };
 

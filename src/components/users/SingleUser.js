@@ -1,7 +1,7 @@
 import React, { useContext, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import GithubContext from '../../context/github/githubContext';
-import { isConditional } from '@babel/types';
+// import { isConditional } from '@babel/types';
 
 const SingleUser = () => {
   const githubContext = useContext(GithubContext);
@@ -21,7 +21,7 @@ const SingleUser = () => {
     followers,
     following,
     public_repos,
-    public_gists
+    public_gists,
   } = user;
 
   return (
@@ -109,7 +109,7 @@ const SingleUser = () => {
           </div>
           {repos && (
             <Fragment>
-              {repos.slice(0, 5).map(repo => (
+              {repos.slice(0, 5).map((repo) => (
                 <div className='card my-3'>
                   <div className='card-body'>
                     <h3>
