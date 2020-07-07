@@ -42,7 +42,7 @@ const Search = () => {
           />
         </div>
         <button className='btn btn-primary btn-block' type='submit'>
-          Submit
+          Search
         </button>
         {githubContext.users.length > 0 && (
           <button className='btn btn-light btn-block' onClick={clear}>

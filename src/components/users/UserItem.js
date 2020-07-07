@@ -23,7 +23,7 @@ const UserItem = ({ user: { avatar_url, login, repos_url } }) => {
           alt='Profile'
           style={{ width: '60px' }}
         />
-        <h4 className='card-title'>{login}</h4>
+        <h4 className='card-title text-light'>{login}</h4>
         <Link
           className='btn btn-primary  px-3 mt-2'
           to={`/user/${login}`}
