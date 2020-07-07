@@ -9539,6 +9539,10 @@ body:after {
   border: none;
 }
 
+.text-light {
+  color: white;
+}
+
 @media (max-width: 576px) {
   .users-grid {
     grid-template-columns: 1fr;

@@ -76,6 +76,10 @@ body {
   border: none;
 }
 
+.text-light {
+  color: white;
+}
+
 // *** MEDIA QUERIES ***//
 @media (max-width: 576px) {
   .users-grid {

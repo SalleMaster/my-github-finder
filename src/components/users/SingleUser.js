@@ -26,7 +26,7 @@ const SingleUser = () => {
 
   return (
     <Fragment>
-      <div className='row'>
+      <div className='row text-light'>
         <div className='col d-flex justify-content-left align-items-center'>
           <Link className='btn btn-primary mr-4' to='/'>
             Back To Search
@@ -42,7 +42,7 @@ const SingleUser = () => {
           </span>
         </div>
       </div>
-      <div className='row my-4'>
+      <div className='row my-4 text-light'>
         <div className='col-md-6 text-center'>
           <img
             src={avatar_url}
